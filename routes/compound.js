@@ -5,6 +5,8 @@ const router = express.Router();
 
 router.get('/all', compoundController.getAllWithPagination);
 
-router.get('/:id', compoundController.getCompoundById);
+router.get('/find/:id', compoundController.getCompoundById);
+
+router.put('/edit', compoundController.editCompound)
 
 module.exports = router;
